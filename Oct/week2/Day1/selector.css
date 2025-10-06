@@ -1,0 +1,165 @@
+/* 2...Combined Selector
+    1.Descendant Selector
+    2.Direct Child Selector(>)
+    3.Adjacent  Sibling Selector(+)
+    4.General Sibling Selector(~)
+ */
+
+ /* Descendant Selector */
+ #parent p{
+    background-color: red;
+ }
+
+ /* Direct Child Selector */
+#parent>p{
+    color: yellow;
+}
+
+/* Adjacent  Sibling Selector */
+#parent+p{
+    background-color: blue;
+}
+
+/* General Sibling Selector */
+#parent~p{
+    color: red;
+}
+
+/* 3...Attribute Selector */
+h1[id="heading"]{
+    background-color: brown;
+}
+
+
+/* 4...Pseudo Class Selector
+    5...Pseudo Element Selector
+*/
+
+/* Pseudo Class Selector
+    1.Hover
+    2.Active
+    3.Focus
+    4.first-child
+    5.last-child
+    6.nth-child()
+    7.Visited
+*/
+
+
+/* Hover */
+#box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+}
+
+#box:hover{
+    background-color: yellow;
+}
+
+/* Active */
+#box:active{
+    background-color: red;
+}
+
+/* Focus */
+input:focus{
+    background-color: green;
+}
+
+/* Visited */
+a:visited{
+    color: brown;
+}
+
+/* first-child and last-child */
+ul li:first-child{
+    background-color: blue;
+}
+
+ul li:last-child{
+    background-color: red;
+}
+
+/* an+b  formula...*/
+
+ul li:nth-child(4){
+    background-color: yellow;
+}
+
+
+/* Pseudo Element Selector
+    1.::first-letter
+    2.::first-line
+    3.::before
+    4.::after
+    5.::selected
+*/
+
+
+/* After */
+
+h2::after{
+    content: " of the about section";
+    color: red;
+}
+
+/* Before */
+
+h2::before{
+    content: "This ";
+    color: blue;
+}
+/* First-letter and First-line */
+
+#box::first-line{
+    background-color: yellow;
+}
+
+#box::first-letter{
+    font-size: 30px;
+    color: red;
+}
+/* Selection */
+
+#box::selection{
+    background-color: green;
+    
+}
+
+
+/* Color
+    1.RGB(Red,Green,Blue)
+    2.RGBA(Red,Green,Blue,Alpha)
+
+
+*/
+
+h3{
+    color: rgba(55, 20, 200, 10);
+}
+
+h4{
+    color: #ff5733;
+}
+
+.box-model{
+    width: 200px;
+    /* border: 5px solid blue; */
+
+
+    /* padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px; */
+    padding: 40px 30px 30px 15px;
+
+
+    /* border-width: 20px;
+    border-style: solid;
+    border-color: blue; */
+    border: 10px solid blue;
+
+
+    margin: 0 0 0 20px;
+}
