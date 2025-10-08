@@ -1,0 +1,38 @@
+.container{
+    max-width: 1024px;
+    /* height: 400px; */
+    padding: 10px;
+    margin: auto;
+    border: 2px solid black;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    /* justify-content: end; */
+    /* flex-direction: column-reverse; */
+}
+
+.item{
+    /* height: 200px; */
+    width: 300px;
+    padding: 10px;
+    border: 1px solid blue;
+    background-color: yellow;
+    flex-grow: 1;
+}
+.item2{
+    /* flex-grow: 2; */
+    /* flex-shrink: ; */
+    /* flex-basis: 500px; */
+    order: 3;
+}
+
+/* Units
+  -px
+  -vh
+  -vw
+  -%
+  -em
+  -rem
+*/
+
