@@ -18,3 +18,8 @@ console.log(boxArr[1] );
 // getElementsByTagName
 let pArr=document.getElementsByTagName("p");
 console.log(pArr);
+
+
+// Task- Html collection aur node list me kya difference hai?
+// Ans- Html collection me live hota hai mtlb agar hum html me kuch add ya delete karte hai to wo html collection me reflect hota hai
+// lekin node list me live nahi hota hai.
